@@ -1,0 +1,55 @@
+No Github:
+
+Entrar no repositório da URL informada
+Clicar em fork
+Alterar o arquivo readme
+Clicar em commit
+Criar um novo pull request
+----------------
+
+Pela linha de código
+
+git init - inicializar 
+git log -ver como está
+git add (nome do arquivo) ou (digitar ponto "." para todos os arquivos serem add)
+git commit -m (nome do arquivo) ou (digitar ponto "." para todos os arquivos serem comitados
+git remote add origin (url de onde clicamos para clonar)
+git push -u origin master
+
+---------------
+instalação do Node JS
+node -v
+code .
+criar um arquivo chamado teste.js
+console.log("Hello World");
+Instalar o NPM express
+--------------
+npm install -g express-generator
+
+express MeuProjeto --view=ejs
+
+cd MeuProjeto
+
+npm install
+
+​npm start
+----------------------
+instalação do jasmine (framework de testes)
+(para garantir testes bdd)
+-pesquisar npm "jasmine install" no google
+-npm install --save-dev jasmine
+-npm install -g jasmine
+-jasmine init
+-digitar "jasmine" no terminal 
+-criar dentro da pasta spec uma outra pasta chamada "controllers"
+-criar dentro da pasta controllers um arquivo chamado homeController.spec.js
+-conteúdo do arquivo:
+    describe('homeController', () => {
+    beforeEach( async() => {
+    console.log("inicio")
+    })
+    it('deveria retornar status code de 200', async () => {
+    const x = "danilo"
+    expect(x).toBe("danilo")
+    })
+   })
